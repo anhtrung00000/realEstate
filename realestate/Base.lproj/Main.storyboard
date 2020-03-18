@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Usu-Nd-cOQ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Usu-Nd-cOQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -37,14 +37,18 @@
                                         <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="9tK-6B-Rcb">
-                                        <rect key="frame" x="324" y="1" width="30" height="28.5"/>
-                                        <color key="tintColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EvX-V6-bt9">
+                                        <rect key="frame" x="324" y="0.0" width="30" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="30" id="AGC-Oz-m4h"/>
-                                            <constraint firstAttribute="height" constant="30" id="V8N-IR-kEr"/>
+                                            <constraint firstAttribute="height" constant="30" id="Qua-aK-sw2"/>
+                                            <constraint firstAttribute="width" constant="30" id="oMc-B2-055"/>
                                         </constraints>
-                                    </imageView>
+                                        <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" image="magnifyingglass" catalog="system"/>
+                                        <connections>
+                                            <segue destination="mJJ-0I-OXk" kind="presentation" id="hGJ-75-9s8"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                             <view alpha="0.5" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EHF-VB-Vmc">
@@ -124,7 +128,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </view>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Cdi-GB-ofu">
-                                                    <rect key="frame" x="20" y="27.5" width="20" height="13"/>
+                                                    <rect key="frame" x="20" y="27.5" width="20" height="12.5"/>
                                                     <color key="tintColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="20" id="Ijw-Q6-j5K"/>
@@ -138,13 +142,13 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="334" height="22.5"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="292 Khach san dep" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U1K-3r-iWj">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="253" height="22.5"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="251.5" height="22.5"/>
                                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="19"/>
                                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="$223,450" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1R-J3-or9">
-                                                                    <rect key="frame" x="263" y="0.0" width="71" height="22.5"/>
+                                                                    <rect key="frame" x="261.5" y="0.0" width="72.5" height="22.5"/>
                                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
                                                                     <color key="textColor" name="Green"/>
                                                                     <nil key="highlightedColor"/>
@@ -346,7 +350,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1047.8260869565217" y="101.78571428571428"/>
+            <point key="canvasLocation" x="984" y="102"/>
         </scene>
         <!--Map View Controller-->
         <scene sceneID="AaY-oN-Xtx">
@@ -593,6 +597,469 @@
             </objects>
             <point key="canvasLocation" x="1718.840579710145" y="101.78571428571428"/>
         </scene>
+        <!--Filter View Controller-->
+        <scene sceneID="qwm-wo-3O1">
+            <objects>
+                <viewController id="mJJ-0I-OXk" customClass="FilterViewController" customModule="realestate" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MCL-AH-ND6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHw-d9-hSO">
+                                <rect key="frame" x="24" y="21" width="16" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="hHc-tU-BWK"/>
+                                    <constraint firstAttribute="width" constant="16" id="kCR-XP-Zrw"/>
+                                </constraints>
+                                <color key="tintColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" image="multiply" catalog="system"/>
+                                <connections>
+                                    <action selector="exitFilter:" destination="mJJ-0I-OXk" eventType="touchUpInside" id="v3H-A5-gBb"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lọc điều kiện" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KhF-df-b5p">
+                                <rect key="frame" x="147" y="20" width="120.5" height="23.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="VpS-vo-4BT" userLabel="position">
+                                <rect key="frame" x="20" y="63.5" width="374" height="210"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ueU-LK-a10">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="position" translatesAutoresizingMaskIntoConstraints="NO" id="FIM-QB-vZj">
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="OIy-Ad-aTm"/>
+                                                    <constraint firstAttribute="height" constant="25" id="wfd-wE-wzS"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Vị trí" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7mS-7I-mis">
+                                                <rect key="frame" x="33" y="0.0" width="47.5" height="25"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="22"/>
+                                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tìm kiếm" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="mgS-O4-Me6">
+                                                <rect key="frame" x="88.5" y="0.0" width="285.5" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="provinceFilter:" destination="mJJ-0I-OXk" eventType="editingChanged" id="7Qy-x5-jn0"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="82t-9v-dF5">
+                                        <rect key="frame" x="0.0" y="45" width="374" height="165"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="fdL-D0-3XT">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="uMf-pD-MAh"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="JXc-eZ-L8b">
+                                                    <size key="itemSize" width="106" height="49"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="I" reuseIdentifier="provinceCell" id="vHd-2t-eow" customClass="PillCollectionViewCell" customModule="realestate" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="3" width="106" height="49"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="FVA-2C-ZD2">
+                                                            <rect key="frame" x="0.0" y="0.0" width="106" height="49"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="elh-Ia-p9M" customClass="CustomUIButton" customModule="realestate" customModuleProvider="target">
+                                                                    <rect key="frame" x="8" y="8" width="90" height="32"/>
+                                                                    <color key="backgroundColor" name="Green"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="32" id="081-2S-hMY"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                                                    <state key="normal" title="Hà Nội"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="16"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="pillSelect:" destination="vHd-2t-eow" eventType="touchUpInside" id="9qQ-Z4-r7A"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="elh-Ia-p9M" secondAttribute="trailing" constant="8" id="eaz-qe-hFT"/>
+                                                                <constraint firstItem="elh-Ia-p9M" firstAttribute="leading" secondItem="FVA-2C-ZD2" secondAttribute="leading" constant="8" id="hxC-fl-vcY"/>
+                                                                <constraint firstItem="elh-Ia-p9M" firstAttribute="top" secondItem="FVA-2C-ZD2" secondAttribute="top" constant="8" id="yxZ-vb-p7D"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="106" height="49"/>
+                                                        <connections>
+                                                            <outlet property="pillText" destination="elh-Ia-p9M" id="h1d-sE-uQN"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="mJJ-0I-OXk" id="0CH-Ca-6Fx"/>
+                                                    <outlet property="delegate" destination="mJJ-0I-OXk" id="amR-yi-b9n"/>
+                                                </connections>
+                                            </collectionView>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7cL-4T-43I">
+                                                <rect key="frame" x="0.0" y="55" width="374" height="55"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="DjP-ps-052"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="APF-fc-ixQ">
+                                                    <size key="itemSize" width="106" height="49"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="districtCell" reuseIdentifier="districtCell" id="p8Y-9r-YFp" customClass="PillCollectionViewCell" customModule="realestate" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="3" width="106" height="49"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="OwO-1a-XcJ">
+                                                            <rect key="frame" x="0.0" y="0.0" width="106" height="49"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e2V-dw-ebD" customClass="CustomUIButton" customModule="realestate" customModuleProvider="target">
+                                                                    <rect key="frame" x="8" y="8" width="90" height="32"/>
+                                                                    <color key="backgroundColor" name="Green"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="32" id="mUq-ok-68W"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                                                    <state key="normal" title="Hà Nội"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="16"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="pillSelect:" destination="p8Y-9r-YFp" eventType="touchUpInside" id="kf8-EB-4cV"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="e2V-dw-ebD" firstAttribute="top" secondItem="OwO-1a-XcJ" secondAttribute="top" constant="8" id="5nT-dQ-nt2"/>
+                                                                <constraint firstAttribute="trailing" secondItem="e2V-dw-ebD" secondAttribute="trailing" constant="8" id="CeR-Ae-eHS"/>
+                                                                <constraint firstItem="e2V-dw-ebD" firstAttribute="leading" secondItem="OwO-1a-XcJ" secondAttribute="leading" constant="8" id="DVi-9K-1uZ"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="106" height="49"/>
+                                                        <connections>
+                                                            <outlet property="pillText" destination="e2V-dw-ebD" id="lP2-y1-jgc"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="mJJ-0I-OXk" id="vXL-PU-0KR"/>
+                                                    <outlet property="delegate" destination="mJJ-0I-OXk" id="X54-xP-5Je"/>
+                                                </connections>
+                                            </collectionView>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Zqp-gf-oW6">
+                                                <rect key="frame" x="0.0" y="110" width="374" height="55"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="SKb-FD-sbG"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8xd-pp-p8b">
+                                                    <size key="itemSize" width="106" height="49"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="wardCell" reuseIdentifier="wardCell" id="xaM-58-yog" customClass="PillCollectionViewCell" customModule="realestate" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="3" width="106" height="49"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PHc-UH-iWv">
+                                                            <rect key="frame" x="0.0" y="0.0" width="106" height="49"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g1l-Jn-cgO" customClass="CustomUIButton" customModule="realestate" customModuleProvider="target">
+                                                                    <rect key="frame" x="8" y="8" width="90" height="32"/>
+                                                                    <color key="backgroundColor" name="Green"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="32" id="W5v-nr-TfJ"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                                                    <state key="normal" title="Hà Nội"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="16"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="pillSelect:" destination="xaM-58-yog" eventType="touchUpInside" id="sAY-b6-kx9"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstAttribute="trailing" secondItem="g1l-Jn-cgO" secondAttribute="trailing" constant="8" id="WLA-HH-UWh"/>
+                                                                <constraint firstItem="g1l-Jn-cgO" firstAttribute="top" secondItem="PHc-UH-iWv" secondAttribute="top" constant="8" id="hwE-4j-s2K"/>
+                                                                <constraint firstItem="g1l-Jn-cgO" firstAttribute="leading" secondItem="PHc-UH-iWv" secondAttribute="leading" constant="8" id="uZ3-Fe-VNp"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="106" height="49"/>
+                                                        <connections>
+                                                            <outlet property="pillText" destination="g1l-Jn-cgO" id="QdR-9l-abx"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="mJJ-0I-OXk" id="woB-8F-HQc"/>
+                                                    <outlet property="delegate" destination="mJJ-0I-OXk" id="cub-Hd-wcq"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="IUa-Qc-0tw" userLabel="typeofwork">
+                                <rect key="frame" x="20" y="293.5" width="374" height="100"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="qoY-4D-eIS">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Contact" translatesAutoresizingMaskIntoConstraints="NO" id="kFu-QK-tQv">
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="FnC-Zs-7F1"/>
+                                                    <constraint firstAttribute="width" constant="25" id="Og4-tq-yv6"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Loại hình công việc" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jX-8c-kOy">
+                                                <rect key="frame" x="33" y="0.0" width="341" height="25"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="22"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tìm kiếm" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="euE-fH-iRi">
+                                                <rect key="frame" x="374" y="0.0" width="0.0" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="provinceFilter:" destination="mJJ-0I-OXk" eventType="editingChanged" id="oUm-pi-2Gt"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="t8g-Cf-mCW">
+                                        <rect key="frame" x="0.0" y="45" width="374" height="55"/>
+                                        <subviews>
+                                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="AbG-63-aGq">
+                                                <rect key="frame" x="0.0" y="0.0" width="374" height="55"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="55" id="D9l-ac-XF7"/>
+                                                </constraints>
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dHH-RI-NQR">
+                                                    <size key="itemSize" width="106" height="49"/>
+                                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                </collectionViewFlowLayout>
+                                                <cells>
+                                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="provinceCell" reuseIdentifier="subjectCell" id="Lx6-ee-qks" customClass="PillCollectionViewCell" customModule="realestate" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="3" width="106" height="49"/>
+                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="QCO-YF-pSY">
+                                                            <rect key="frame" x="0.0" y="0.0" width="106" height="49"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <subviews>
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4g-v0-uEe" customClass="CustomUIButton" customModule="realestate" customModuleProvider="target">
+                                                                    <rect key="frame" x="8" y="8" width="90" height="32"/>
+                                                                    <color key="backgroundColor" name="Green"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="height" constant="32" id="SOZ-TG-flM"/>
+                                                                    </constraints>
+                                                                    <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="14"/>
+                                                                    <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                    <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                                                    <state key="normal" title="Phổ thông"/>
+                                                                    <userDefinedRuntimeAttributes>
+                                                                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                            <real key="value" value="16"/>
+                                                                        </userDefinedRuntimeAttribute>
+                                                                    </userDefinedRuntimeAttributes>
+                                                                    <connections>
+                                                                        <action selector="pillSelect:" destination="Lx6-ee-qks" eventType="touchUpInside" id="NKP-k2-diO"/>
+                                                                    </connections>
+                                                                </button>
+                                                            </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Y4g-v0-uEe" firstAttribute="top" secondItem="QCO-YF-pSY" secondAttribute="top" constant="8" id="8bY-IU-ygQ"/>
+                                                                <constraint firstAttribute="trailing" secondItem="Y4g-v0-uEe" secondAttribute="trailing" constant="8" id="o9v-Ag-6uR"/>
+                                                                <constraint firstItem="Y4g-v0-uEe" firstAttribute="leading" secondItem="QCO-YF-pSY" secondAttribute="leading" constant="8" id="v5t-jX-iTr"/>
+                                                            </constraints>
+                                                        </collectionViewCellContentView>
+                                                        <size key="customSize" width="106" height="49"/>
+                                                        <connections>
+                                                            <outlet property="pillText" destination="Y4g-v0-uEe" id="GJQ-U5-xq0"/>
+                                                        </connections>
+                                                    </collectionViewCell>
+                                                </cells>
+                                                <connections>
+                                                    <outlet property="dataSource" destination="mJJ-0I-OXk" id="bLM-eY-p97"/>
+                                                    <outlet property="delegate" destination="mJJ-0I-OXk" id="Nmk-Iy-P6i"/>
+                                                </connections>
+                                            </collectionView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="OtE-AR-dNh">
+                                <rect key="frame" x="20" y="413.5" width="374" height="74"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="8ya-ph-avb">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="25"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Calender" translatesAutoresizingMaskIntoConstraints="NO" id="S8U-8M-X5X">
+                                                <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="8IN-Si-Cv3"/>
+                                                    <constraint firstAttribute="height" constant="25" id="oNM-Fq-KSR"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" text="Thời gian" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wdu-Wy-3N4">
+                                                <rect key="frame" x="33" y="0.0" width="341" height="25"/>
+                                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="22"/>
+                                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Tìm kiếm" textAlignment="natural" clearsOnBeginEditing="YES" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OB2-kb-0sA">
+                                                <rect key="frame" x="374" y="0.0" width="0.0" height="25"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <action selector="provinceFilter:" destination="mJJ-0I-OXk" eventType="editingChanged" id="O1V-2R-Tri"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="HGq-ZW-7De">
+                                        <rect key="frame" x="0.0" y="40" width="374" height="34"/>
+                                        <subviews>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="10:00 am 10/03/2020" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Hf-ba-ULd" customClass="CustomUITextFeild" customModule="realestate" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="167.5" height="34"/>
+                                                <color key="textColor" name="Green"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="Green"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="startDateSelect:" destination="mJJ-0I-OXk" eventType="touchDown" id="DVj-fH-wlL"/>
+                                                    <outlet property="delegate" destination="mJJ-0I-OXk" id="HFR-bH-uPH"/>
+                                                </connections>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="tới" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="P5u-5i-tyv">
+                                                <rect key="frame" x="177.5" y="0.0" width="19.5" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" name="Green"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="250" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="11:00 am 11/04/2020" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tU2-AC-EVm" customClass="CustomUITextFeild" customModule="realestate" customModuleProvider="target">
+                                                <rect key="frame" x="207" y="0.0" width="167" height="34"/>
+                                                <color key="textColor" name="Green"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" name="Green"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                        <real key="value" value="1"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="5"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </textField>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="tU2-AC-EVm" firstAttribute="width" secondItem="7Hf-ba-ULd" secondAttribute="width" id="Hb3-Mc-vFb"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nX1-Wu-Jss" customClass="CustomUIButton" customModule="realestate" customModuleProvider="target">
+                                <rect key="frame" x="132" y="718" width="150" height="40"/>
+                                <color key="backgroundColor" name="Green"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="150" id="Asb-vj-7SB"/>
+                                    <constraint firstAttribute="height" constant="40" id="vHK-pq-9I5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <inset key="contentEdgeInsets" minX="-5" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="120" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="TÌM KIẾM" image="paperplane.fill" catalog="system">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="bHw-d9-hSO" firstAttribute="leading" secondItem="Fcn-nD-7V3" secondAttribute="leading" constant="24" id="B11-9B-0tM"/>
+                            <constraint firstItem="OtE-AR-dNh" firstAttribute="leading" secondItem="Fcn-nD-7V3" secondAttribute="leading" constant="20" id="HTm-Ay-ar8"/>
+                            <constraint firstItem="Fcn-nD-7V3" firstAttribute="trailing" secondItem="IUa-Qc-0tw" secondAttribute="trailing" constant="20" id="N83-0P-K5d"/>
+                            <constraint firstItem="KhF-df-b5p" firstAttribute="centerX" secondItem="Fcn-nD-7V3" secondAttribute="centerX" id="T3M-vD-Dts"/>
+                            <constraint firstItem="Fcn-nD-7V3" firstAttribute="trailing" secondItem="VpS-vo-4BT" secondAttribute="trailing" constant="20" id="Tk7-13-joS"/>
+                            <constraint firstItem="VpS-vo-4BT" firstAttribute="leading" secondItem="Fcn-nD-7V3" secondAttribute="leading" constant="20" id="d9n-65-B1l"/>
+                            <constraint firstItem="KhF-df-b5p" firstAttribute="top" secondItem="Fcn-nD-7V3" secondAttribute="top" constant="20" id="gHw-Ld-DaY"/>
+                            <constraint firstItem="VpS-vo-4BT" firstAttribute="top" secondItem="KhF-df-b5p" secondAttribute="bottom" constant="20" id="ghJ-JI-OB5"/>
+                            <constraint firstItem="Fcn-nD-7V3" firstAttribute="bottom" secondItem="nX1-Wu-Jss" secondAttribute="bottom" constant="50" id="kgb-nd-By9"/>
+                            <constraint firstItem="IUa-Qc-0tw" firstAttribute="leading" secondItem="Fcn-nD-7V3" secondAttribute="leading" constant="20" id="oSy-tm-EHg"/>
+                            <constraint firstItem="bHw-d9-hSO" firstAttribute="centerY" secondItem="KhF-df-b5p" secondAttribute="centerY" id="ogO-yU-V4f"/>
+                            <constraint firstItem="Fcn-nD-7V3" firstAttribute="trailing" secondItem="OtE-AR-dNh" secondAttribute="trailing" constant="20" id="qTa-zD-0rM"/>
+                            <constraint firstItem="OtE-AR-dNh" firstAttribute="top" secondItem="IUa-Qc-0tw" secondAttribute="bottom" constant="20" id="ruQ-Y7-Cq9"/>
+                            <constraint firstItem="nX1-Wu-Jss" firstAttribute="centerX" secondItem="Fcn-nD-7V3" secondAttribute="centerX" id="vMU-dF-HTn"/>
+                            <constraint firstItem="IUa-Qc-0tw" firstAttribute="top" secondItem="VpS-vo-4BT" secondAttribute="bottom" constant="20" id="xAj-DA-a7H"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Fcn-nD-7V3"/>
+                    </view>
+                    <connections>
+                        <outlet property="districtCollectionView" destination="7cL-4T-43I" id="dVG-op-ezI"/>
+                        <outlet property="provinceCollectionView" destination="fdL-D0-3XT" id="pUE-xS-ZBF"/>
+                        <outlet property="provinceFilterText" destination="mgS-O4-Me6" id="JaS-Ix-fNE"/>
+                        <outlet property="typeOfWorkCollectionView" destination="AbG-63-aGq" id="coJ-aU-AlE"/>
+                        <outlet property="wardCollectionView" destination="Zqp-gf-oW6" id="fYq-fG-mgm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PlL-GV-Z6m" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="982.60869565217399" y="807.58928571428567"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="oDN-9W-vlk">
             <objects>
@@ -615,13 +1082,18 @@
     <resources>
         <image name="Area" width="32" height="32"/>
         <image name="Bathroom" width="32" height="32"/>
+        <image name="Calender" width="21" height="21"/>
+        <image name="Contact" width="23" height="23"/>
         <image name="Room1" width="2736" height="1824"/>
         <image name="RoomNumber" width="32" height="32"/>
         <image name="Updown" width="32" height="32"/>
         <image name="arrow.left" catalog="system" width="64" height="48"/>
-        <image name="heart.fill" catalog="system" width="64" height="58"/>
-        <image name="magnifyingglass" catalog="system" width="64" height="60"/>
-        <image name="map" catalog="system" width="64" height="58"/>
+        <image name="heart.fill" catalog="system" width="64" height="54"/>
+        <image name="magnifyingglass" catalog="system" width="64" height="56"/>
+        <image name="map" catalog="system" width="64" height="56"/>
+        <image name="multiply" catalog="system" width="64" height="54"/>
+        <image name="paperplane.fill" catalog="system" width="64" height="60"/>
+        <image name="position" width="12" height="18"/>
         <image name="slider.horizontal.3" catalog="system" width="64" height="50"/>
         <namedColor name="Green">
             <color red="0.045000001788139343" green="0.52499997615814209" blue="0.36100000143051147" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

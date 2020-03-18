@@ -50,8 +50,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         att.append(usAtt)
         titleLabel.attributedText = att
     }
-
-
 }
 
 

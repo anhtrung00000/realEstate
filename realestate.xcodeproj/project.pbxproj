@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3B10834A2407CE3700EB413A /* DbManagerment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1083492407CE3700EB413A /* DbManagerment.swift */; };
+		3B49C3FB2408C71D009A0BAD /* UICollectionViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B49C3FA2408C71D009A0BAD /* UICollectionViewExtension.swift */; };
 		3B54C352234F9A2C0034951A /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54C351234F9A2C0034951A /* UIViewExtensions.swift */; };
 		3B54C354234F9A6B0034951A /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54C353234F9A6B0034951A /* UIButtonExtension.swift */; };
 		3B54C356234F9A880034951A /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54C355234F9A880034951A /* UIImageViewExtension.swift */; };
@@ -14,6 +16,7 @@
 		3B54C35A234FAD8A0034951A /* RoomMapCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B54C359234FAD8A0034951A /* RoomMapCollectionViewCell.swift */; };
 		3BC6A08C23503756003334A5 /* CustomPointAnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BC6A08B23503756003334A5 /* CustomPointAnotation.swift */; };
 		3BD02A07234F569D00482EBE /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD02A06234F569D00482EBE /* MapViewController.swift */; };
+		3BF0DF8A240E8878005CC2C0 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF0DF89240E8878005CC2C0 /* Subject.swift */; };
 		3BF36469234DDEEE0054E565 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF36468234DDEEE0054E565 /* AppDelegate.swift */; };
 		3BF3646B234DDEEE0054E565 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3646A234DDEEE0054E565 /* SceneDelegate.swift */; };
 		3BF3646D234DDEEE0054E565 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF3646C234DDEEE0054E565 /* ViewController.swift */; };
@@ -35,6 +38,16 @@
 		3BF364C9234E46990054E565 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BF364BD234E46990054E565 /* Roboto-Light.ttf */; };
 		3BF364CA234E46990054E565 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BF364BE234E46990054E565 /* Roboto-ThinItalic.ttf */; };
 		3BF364CB234E46990054E565 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3BF364BF234E46990054E565 /* Roboto-BlackItalic.ttf */; };
+		3BFBC6172407B6C600433661 /* FilterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFBC6162407B6C600433661 /* FilterViewController.swift */; };
+		3BFBC6192407C07200433661 /* PillCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFBC6182407C07200433661 /* PillCollectionViewCell.swift */; };
+		3BFBC61C2407C74A00433661 /* dvhcvn.db in Resources */ = {isa = PBXBuildFile; fileRef = 3BFBC61B2407C74A00433661 /* dvhcvn.db */; };
+		3BFBC61F2407C93400433661 /* BaseSqlModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFBC61E2407C93400433661 /* BaseSqlModel.swift */; };
+		3BFBC6212407CA1600433661 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFBC6202407CA1600433661 /* Province.swift */; };
+		3BFBC6252407CA4900433661 /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFBC6242407CA4900433661 /* District.swift */; };
+		3BFBC6272407CAF500433661 /* Ward.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BFBC6262407CAF500433661 /* Ward.swift */; };
+		5E66DCF0FFB544A3EDFA4FB8 /* Pods_realestateTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43B9395331B00F0FA1C302DA /* Pods_realestateTests.framework */; };
+		6E2FB916CF4ACB7ED0186050 /* Pods_realestate_realestateUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52813631BF7A9A96874713B5 /* Pods_realestate_realestateUITests.framework */; };
+		7237D19588F71B56D1206B90 /* Pods_realestate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C73C872E56CD1B80038E1F1 /* Pods_realestate.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +68,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		10CB3EB786CB4EE3B1325282 /* Pods-realestateTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realestateTests.release.xcconfig"; path = "Target Support Files/Pods-realestateTests/Pods-realestateTests.release.xcconfig"; sourceTree = "<group>"; };
+		1DC48F46794A84DA683156C7 /* Pods-realestate.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realestate.release.xcconfig"; path = "Target Support Files/Pods-realestate/Pods-realestate.release.xcconfig"; sourceTree = "<group>"; };
+		3420756013E1796ADBD51E2C /* Pods-realestate-realestateUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realestate-realestateUITests.release.xcconfig"; path = "Target Support Files/Pods-realestate-realestateUITests/Pods-realestate-realestateUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3B1083492407CE3700EB413A /* DbManagerment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DbManagerment.swift; sourceTree = "<group>"; };
+		3B49C3FA2408C71D009A0BAD /* UICollectionViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewExtension.swift; sourceTree = "<group>"; };
 		3B54C351234F9A2C0034951A /* UIViewExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		3B54C353234F9A6B0034951A /* UIButtonExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		3B54C355234F9A880034951A /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
@@ -62,6 +80,7 @@
 		3B54C359234FAD8A0034951A /* RoomMapCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomMapCollectionViewCell.swift; sourceTree = "<group>"; };
 		3BC6A08B23503756003334A5 /* CustomPointAnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPointAnotation.swift; sourceTree = "<group>"; };
 		3BD02A06234F569D00482EBE /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		3BF0DF89240E8878005CC2C0 /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
 		3BF36465234DDEEE0054E565 /* realestate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = realestate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BF36468234DDEEE0054E565 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3BF3646A234DDEEE0054E565 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -89,6 +108,19 @@
 		3BF364BD234E46990054E565 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
 		3BF364BE234E46990054E565 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
 		3BF364BF234E46990054E565 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		3BFBC6162407B6C600433661 /* FilterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewController.swift; sourceTree = "<group>"; };
+		3BFBC6182407C07200433661 /* PillCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PillCollectionViewCell.swift; sourceTree = "<group>"; };
+		3BFBC61B2407C74A00433661 /* dvhcvn.db */ = {isa = PBXFileReference; lastKnownFileType = file; path = dvhcvn.db; sourceTree = "<group>"; };
+		3BFBC61E2407C93400433661 /* BaseSqlModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseSqlModel.swift; sourceTree = "<group>"; };
+		3BFBC6202407CA1600433661 /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
+		3BFBC6242407CA4900433661 /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		3BFBC6262407CAF500433661 /* Ward.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ward.swift; sourceTree = "<group>"; };
+		43B9395331B00F0FA1C302DA /* Pods_realestateTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realestateTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		493C4B13E0EB43B17ABFDD4A /* Pods-realestate-realestateUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realestate-realestateUITests.debug.xcconfig"; path = "Target Support Files/Pods-realestate-realestateUITests/Pods-realestate-realestateUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		52813631BF7A9A96874713B5 /* Pods_realestate_realestateUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realestate_realestateUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C73C872E56CD1B80038E1F1 /* Pods_realestate.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_realestate.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		95B4DF26D1A27C9000DC49F8 /* Pods-realestate.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realestate.debug.xcconfig"; path = "Target Support Files/Pods-realestate/Pods-realestate.debug.xcconfig"; sourceTree = "<group>"; };
+		DA4F3F78561252C115F8F83A /* Pods-realestateTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-realestateTests.debug.xcconfig"; path = "Target Support Files/Pods-realestateTests/Pods-realestateTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7237D19588F71B56D1206B90 /* Pods_realestate.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E66DCF0FFB544A3EDFA4FB8 /* Pods_realestateTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,6 +144,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6E2FB916CF4ACB7ED0186050 /* Pods_realestate_realestateUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +158,7 @@
 				3B54C353234F9A6B0034951A /* UIButtonExtension.swift */,
 				3B54C355234F9A880034951A /* UIImageViewExtension.swift */,
 				3B54C357234F9AA20034951A /* UITextFeildExtension.swift */,
+				3B49C3FA2408C71D009A0BAD /* UICollectionViewExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -132,6 +168,7 @@
 			children = (
 				3BF3646C234DDEEE0054E565 /* ViewController.swift */,
 				3BD02A06234F569D00482EBE /* MapViewController.swift */,
+				3BFBC6162407B6C600433661 /* FilterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -144,6 +181,8 @@
 				3BF3647E234DDEF10054E565 /* realestateTests */,
 				3BF36489234DDEF10054E565 /* realestateUITests */,
 				3BF36466234DDEEE0054E565 /* Products */,
+				F7927EBDE269859770B34A25 /* Pods */,
+				52C7259E8003FCA19FEC4DB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -160,6 +199,7 @@
 		3BF36467234DDEEE0054E565 /* realestate */ = {
 			isa = PBXGroup;
 			children = (
+				3BFBC61A2407C73300433661 /* LocalDb */,
 				3B54C350234F9A110034951A /* Extensions */,
 				3BD02A05234F567600482EBE /* ViewControllers */,
 				3BF364B1234E41D70054E565 /* Cells */,
@@ -216,8 +256,54 @@
 				3BF364B2234E41FF0054E565 /* DashboardTableViewCell.swift */,
 				3B54C359234FAD8A0034951A /* RoomMapCollectionViewCell.swift */,
 				3BC6A08B23503756003334A5 /* CustomPointAnotation.swift */,
+				3BFBC6182407C07200433661 /* PillCollectionViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		3BFBC61A2407C73300433661 /* LocalDb */ = {
+			isa = PBXGroup;
+			children = (
+				3BFBC61D2407C90700433661 /* Model */,
+				3BFBC61B2407C74A00433661 /* dvhcvn.db */,
+				3B1083492407CE3700EB413A /* DbManagerment.swift */,
+			);
+			path = LocalDb;
+			sourceTree = "<group>";
+		};
+		3BFBC61D2407C90700433661 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BFBC61E2407C93400433661 /* BaseSqlModel.swift */,
+				3BFBC6202407CA1600433661 /* Province.swift */,
+				3BFBC6242407CA4900433661 /* District.swift */,
+				3BFBC6262407CAF500433661 /* Ward.swift */,
+				3BF0DF89240E8878005CC2C0 /* Subject.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		52C7259E8003FCA19FEC4DB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7C73C872E56CD1B80038E1F1 /* Pods_realestate.framework */,
+				52813631BF7A9A96874713B5 /* Pods_realestate_realestateUITests.framework */,
+				43B9395331B00F0FA1C302DA /* Pods_realestateTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F7927EBDE269859770B34A25 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95B4DF26D1A27C9000DC49F8 /* Pods-realestate.debug.xcconfig */,
+				1DC48F46794A84DA683156C7 /* Pods-realestate.release.xcconfig */,
+				493C4B13E0EB43B17ABFDD4A /* Pods-realestate-realestateUITests.debug.xcconfig */,
+				3420756013E1796ADBD51E2C /* Pods-realestate-realestateUITests.release.xcconfig */,
+				DA4F3F78561252C115F8F83A /* Pods-realestateTests.debug.xcconfig */,
+				10CB3EB786CB4EE3B1325282 /* Pods-realestateTests.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,9 +313,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF3648F234DDEF10054E565 /* Build configuration list for PBXNativeTarget "realestate" */;
 			buildPhases = (
+				150F56D6293EF18CD993E424 /* [CP] Check Pods Manifest.lock */,
 				3BF36461234DDEEE0054E565 /* Sources */,
 				3BF36462234DDEEE0054E565 /* Frameworks */,
 				3BF36463234DDEEE0054E565 /* Resources */,
+				2C08E1CB6491226AF02AE1E8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -244,6 +332,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF36492234DDEF10054E565 /* Build configuration list for PBXNativeTarget "realestateTests" */;
 			buildPhases = (
+				A045491D28F9988EA61FADE8 /* [CP] Check Pods Manifest.lock */,
 				3BF36477234DDEF10054E565 /* Sources */,
 				3BF36478234DDEF10054E565 /* Frameworks */,
 				3BF36479234DDEF10054E565 /* Resources */,
@@ -262,9 +351,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3BF36495234DDEF10054E565 /* Build configuration list for PBXNativeTarget "realestateUITests" */;
 			buildPhases = (
+				8376333747529A0036593D3B /* [CP] Check Pods Manifest.lock */,
 				3BF36482234DDEF10054E565 /* Sources */,
 				3BF36483234DDEF10054E565 /* Frameworks */,
 				3BF36484234DDEF10054E565 /* Resources */,
+				DEFE4B06441BA34981256206 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -330,6 +421,7 @@
 				3BF36475234DDEF10054E565 /* LaunchScreen.storyboard in Resources */,
 				3BF36472234DDEF10054E565 /* Assets.xcassets in Resources */,
 				3BF364C1234E46990054E565 /* Roboto-Italic.ttf in Resources */,
+				3BFBC61C2407C74A00433661 /* dvhcvn.db in Resources */,
 				3BF364C8234E46990054E565 /* Roboto-BoldItalic.ttf in Resources */,
 				3BF364CB234E46990054E565 /* Roboto-BlackItalic.ttf in Resources */,
 				3BF364C5234E46990054E565 /* Roboto-LightItalic.ttf in Resources */,
@@ -358,22 +450,134 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		150F56D6293EF18CD993E424 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-realestate-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2C08E1CB6491226AF02AE1E8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-realestate/Pods-realestate-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-realestate/Pods-realestate-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-realestate/Pods-realestate-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8376333747529A0036593D3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-realestate-realestateUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A045491D28F9988EA61FADE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-realestateTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEFE4B06441BA34981256206 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-realestate-realestateUITests/Pods-realestate-realestateUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-realestate-realestateUITests/Pods-realestate-realestateUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-realestate-realestateUITests/Pods-realestate-realestateUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3BF36461234DDEEE0054E565 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3BF3646D234DDEEE0054E565 /* ViewController.swift in Sources */,
+				3BFBC61F2407C93400433661 /* BaseSqlModel.swift in Sources */,
 				3BF36469234DDEEE0054E565 /* AppDelegate.swift in Sources */,
 				3BF364B3234E41FF0054E565 /* DashboardTableViewCell.swift in Sources */,
+				3B49C3FB2408C71D009A0BAD /* UICollectionViewExtension.swift in Sources */,
 				3BD02A07234F569D00482EBE /* MapViewController.swift in Sources */,
 				3B54C354234F9A6B0034951A /* UIButtonExtension.swift in Sources */,
 				3BC6A08C23503756003334A5 /* CustomPointAnotation.swift in Sources */,
+				3BFBC6172407B6C600433661 /* FilterViewController.swift in Sources */,
+				3BFBC6272407CAF500433661 /* Ward.swift in Sources */,
 				3B54C352234F9A2C0034951A /* UIViewExtensions.swift in Sources */,
+				3BFBC6212407CA1600433661 /* Province.swift in Sources */,
+				3B10834A2407CE3700EB413A /* DbManagerment.swift in Sources */,
 				3B54C356234F9A880034951A /* UIImageViewExtension.swift in Sources */,
+				3BFBC6192407C07200433661 /* PillCollectionViewCell.swift in Sources */,
 				3BF3646B234DDEEE0054E565 /* SceneDelegate.swift in Sources */,
+				3BF0DF8A240E8878005CC2C0 /* Subject.swift in Sources */,
 				3B54C35A234FAD8A0034951A /* RoomMapCollectionViewCell.swift in Sources */,
 				3B54C358234F9AA20034951A /* UITextFeildExtension.swift in Sources */,
+				3BFBC6252407CA4900433661 /* District.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -544,6 +748,7 @@
 		};
 		3BF36490234DDEF10054E565 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95B4DF26D1A27C9000DC49F8 /* Pods-realestate.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -562,6 +767,7 @@
 		};
 		3BF36491234DDEF10054E565 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DC48F46794A84DA683156C7 /* Pods-realestate.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -580,6 +786,7 @@
 		};
 		3BF36493234DDEF10054E565 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA4F3F78561252C115F8F83A /* Pods-realestateTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -601,6 +808,7 @@
 		};
 		3BF36494234DDEF10054E565 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10CB3EB786CB4EE3B1325282 /* Pods-realestateTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -622,6 +830,7 @@
 		};
 		3BF36496234DDEF10054E565 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 493C4B13E0EB43B17ABFDD4A /* Pods-realestate-realestateUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -641,6 +850,7 @@
 		};
 		3BF36497234DDEF10054E565 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3420756013E1796ADBD51E2C /* Pods-realestate-realestateUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

@@ -1,0 +1,22 @@
+PODS:
+  - DateTimePicker (2.3.1)
+  - SQLite.swift (0.12.2):
+    - SQLite.swift/standard (= 0.12.2)
+  - SQLite.swift/standard (0.12.2)
+
+DEPENDENCIES:
+  - DateTimePicker
+  - SQLite.swift (~> 0.12.0)
+
+SPEC REPOS:
+  trunk:
+    - DateTimePicker
+    - SQLite.swift
+
+SPEC CHECKSUMS:
+  DateTimePicker: 678d94f4ed27643db6be3381fff6296953dda0c1
+  SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
+
+PODFILE CHECKSUM: 336eba563beb8a1449eb86c316e90e7fb7a16852
+
+COCOAPODS: 1.9.0
